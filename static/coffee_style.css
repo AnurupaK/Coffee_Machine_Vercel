@@ -1,0 +1,140 @@
+header{
+    border: 5px solid rgb(97, 22, 22);
+    position: sticky;
+    background-color: orange;
+}
+
+nav{
+    border: 1px solid black;
+    
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 100px;
+    
+}
+
+header nav ul li{
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 23px;
+    font-weight: 500px;
+}
+
+
+.container {
+    text-align: center; 
+    /* border: 2px solid black; */
+    padding-bottom: 56px;
+}
+
+#coffee{
+    display: inline-block; 
+    margin-left: 165px;
+    box-shadow: 5px 5px 15px 5px rgb(232, 214, 214);
+    
+    
+}
+
+main{
+    border: 5px solid rgb(189, 39, 39);
+    background-color: beige;
+    
+}
+
+#btn{
+    position: relative;
+    bottom: 7px;
+    font-family: "Poppins", sans-serif;
+    background-color: brown;
+    color: aliceblue;
+}
+
+#btn:hover{
+    background-color: rgb(231, 235, 125);
+    color: black;
+    box-shadow: 5px 5px 15px 5px grey;
+    cursor: pointer;;
+}
+
+#coffee::placeholder{
+    padding-left: 12px;
+    padding-top: 12px;
+    font-size: 23px;
+}
+
+
+.items{
+    margin-top: 48px;
+    padding: 23px;
+    border: 3px solid rgb(221, 230, 221);
+    background-color: rgb(125, 10, 64);
+    box-shadow: 5px 5px 15px 5px rgb(227, 216, 216);
+    
+}
+
+.items label{
+    margin-right: 118px;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    color: white;
+}
+
+.items select{
+    position: relative;
+    right: 110px;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#Milk_item{
+    background-color: white;
+}
+
+#Sugar_item{
+    background-color: rgb(181, 181, 235);
+}
+
+#Coffee_item{
+    background-color: rgb(245, 183, 76);
+}
+
+#HotWater_item{
+    background-color: rgb(238, 234, 127);
+}
+
+#Cream_item{
+    background-color: rgb(234, 131, 148);
+}
+
+.logo{
+    font-size: 37px;
+}
+
+footer{
+    background-color: brown;
+    padding: 1px;
+    text-align: center;
+    
+}
+
+footer p{
+    position: relative;
+    top: 1px;
+    font-size: 18px;
+    color: white;
+    font-weight: 800px;
+    font-family: "Poppins", sans-serif;
+}
+ 
+.icon{
+    position: relative;
+    right: 42vw;
+    font-size: 20px;
+    color: antiquewhite;
+    margin-right: 23px
+}
+

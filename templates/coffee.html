@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="coffee_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="./static/coffee_style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <title>Coffee Machine</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li class="item"><span class="logo">🏠</span>Home</li>
+                <li class="item"><span class="logo">🔎</span>Service</li>
+                <li class="item"><span class="logo">📞</span>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="/Coffee_Make" method="post">
+            <div class="container">
+                <h1 id="headline">Coffee Machine</h1>
+
+                <textarea name="coffee" id="coffee" cols="50" rows="11" placeholder="Your Coffee 😊..."></textarea>
+
+                <button type="submit" id="btn">Make your coffee here</button>
+
+                <div class="items">
+                    <label for="Milk_item">🥛Milk</label>
+                    <select name="milk" id="Milk_item">
+<!--                        <option value=""> </option>-->
+                        <option value="1" {% if milk =='1' %} selected {% endif %}>1 ml</option>
+                        <option value="2" {% if milk =='2' %} selected {% endif %}>2 ml</option>
+                        <option value="3" {% if milk =='3' %} selected {% endif %}>3 ml</option>
+                    </select>
+                    <label for="Sugar_item">🧊Sugar</label>
+                    <select name="sugar" id="Sugar_item">
+<!--                        <option value=""> </option>-->
+                        <option value="1" {% if sugar =='1' %} selected {% endif %}>1 cube</option>
+                        <option value="2" {% if sugar =='2' %} selected {% endif %}>2 cube</option>
+                        <option value="3" {% if sugar =='3' %} selected {% endif %}>3 cube</option>
+                    </select>
+                    <label for="Coffee_item">☕Coffee</label>
+                    <select name="coffee_amount" id="Coffee_item">
+<!--                        <option value=""> </option>-->
+                        <option value="1" {% if coffee_amount =='1' %} selected {% endif %}>1 Spoon</option>
+                        <option value="2" {% if coffee_amount =='2' %} selected {% endif %}>2 Spoon</option>
+                        <option value="3" {% if coffee_amount =='3' %} selected {% endif %}>3 Spoon</option>
+                    </select>
+                    <label for="HotWater_item">💦Hot Water</label>
+                    <select name="hotwater" id="HotWater_item">
+<!--                        <option value=""> </option>-->
+                        <option value="1" {% if hotwater =='1' %} selected {% endif %}>1 cup</option>
+                        <option value="2" {% if hotwater =='2' %} selected {% endif %}>2 cup</option>
+                        <option value="3" {% if hotwater =='3' %} selected {% endif %}>3 cup</option>
+                    </select>
+                    <label for="Cream_item">🍦Cream</label>
+                    <select name="cream" id="Cream_item">
+<!--                        <option value=""> </option>-->
+                        <option value="1" {% if cream =='1' %} selected {% endif %}>1 scoop</option>
+                        <option value="2" {% if cream =='2' %} selected {% endif %}>2 scoop</option>
+                        <option value="3" {% if cream =='3' %} selected {% endif %}>3 scoop</option>
+                    </select>
+
+                </div>
+
+            </div>
+        </form>
+        <footer>
+            <p>
+                Copyright@anu_k
+            </p>
+
+            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:youremail@example.com" class="icon"><i class="fas fa-envelope"></i></a>
+
+
+        </footer>
+
+    </main>
+    <script>
+            var placeholderText = document.getElementById('coffee').getAttribute('placeholder');
+            document.getElementById('coffee').setAttribute('placeholder', placeholderText + '{{ Your_Coffee }}');
+    </script>
+
+
+</body>
+
+</html>
