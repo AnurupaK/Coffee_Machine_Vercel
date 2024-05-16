@@ -2,13 +2,13 @@ from flask import Flask, request, render_template
 
 
 
-coffee_app = Flask(__name__,template_folder="templates",static_folder="static")
+app = Flask(__name__,template_folder="templates",static_folder="static")
 
-@coffee_app.route('/')
+@app.route('/')
 def home():
     return render_template("coffee.html")
 
-@coffee_app.route("/Coffee_Make",methods=['POST'])
+@app.route("/Coffee_Make",methods=['POST'])
 def coffee_making():
     if request.method == 'POST':
         milk = int(request.form['milk'])
