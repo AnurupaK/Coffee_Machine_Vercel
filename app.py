@@ -23,14 +23,13 @@ def coffee_making():
         print(hotwater)
         print(cream)
 
-        if milk >= 1 and sugar >= 1 and coffee_amount >= 1 and hotwater >= 1:
-            # Assuming all ingredients are present, it's a regular coffee
+        if milk == 1 and sugar==1 and coffee_amount==1 and hotwater ==1 and cream ==1:
             Your_Coffee = "Your Regular Coffee is here ☕! Enjoy😊"
-        elif milk >= 1 and sugar >= 1 and coffee_amount >= 1 and cream >= 1:
+        elif milk == 3 and sugar==2 and coffee_amount ==2 and hotwater ==2 and cream ==2:
             Your_Coffee = "Your Cappuccino is here 🥤! Enjoy😊"
-        elif milk >= 1 and sugar >= 1 and coffee_amount >= 1:
+        elif milk == 3 and sugar ==3 and coffee_amount ==1 and hotwater ==3 and cream ==1:
             Your_Coffee = "Your Latte is here 🧋! Enjoy😊"
-        elif coffee_amount >= 1 and hotwater >= 1:
+        elif milk ==3 and sugar ==3 and coffee_amount == 3 and hotwater ==3 and cream ==3:
             Your_Coffee = "Your Espresso is here 🍵! Enjoy😊"
         else:
             Your_Coffee = "Your Americano is here 🧉! Enjoy😊"
